@@ -6,7 +6,7 @@ export interface CardProps extends React.Component<React.HTMLAttributes<HTMLDivE
     children : ReactNode;
     asChild?: boolean;
     className?: string;
-    color: 'b1' | 'b2'
+    color: 'blue-400' | 'blue-500'
 }
 
 export function Card({
@@ -17,10 +17,10 @@ export function Card({
   return (
     <Comp
       className={clsx(
-        'flex flex-col py-9 px-4 text-center rounded-[20px] max-w-[527px]',
+        'flex flex-col py-9 px-4 text-center rounded-[20px] max-w-[527px] blue-400',
         {
-          'bg-blue-400': color === 'b1',
-          'bg-blue-500': color === 'b2',
+          'bg-blue-400': color === 'blue-400',
+          'bg-blue-500': color === 'blue-500',
         },
         className,
       )}
