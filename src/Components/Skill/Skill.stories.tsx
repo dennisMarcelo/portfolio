@@ -7,11 +7,11 @@ export default {
   component: Skill,
   args: {
     skillName: 'JavaScript',
-    proficiency: 3,
+    proficiency: 4,
   },
   argTypes: {
     proficiency: {
-      options: ['1', '2', '3', '4', '5'],
+      options: [1, 2, 3, 4, 5],
       control: {
         type: 'inline-radio',
       },
