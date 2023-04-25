@@ -2,11 +2,11 @@ import React, { SVGAttributes } from 'react';
 import { clsx } from 'clsx';
 
 // eslint-disable-next-line no-undef
-interface HexagonProps extends SVGAttributes<HTMLOrSVGElement> {
+export interface HexagonProps extends SVGAttributes<HTMLOrSVGElement> {
   color: 'y-200' | 'y-50'
 }
 
-function Hexagon({ color, ...props }: HexagonProps) {
+export function Hexagon({ color, ...props }: HexagonProps) {
   return (
     <svg
       width="36"
@@ -29,5 +29,3 @@ function Hexagon({ color, ...props }: HexagonProps) {
 
   );
 }
-
-export default Hexagon;
