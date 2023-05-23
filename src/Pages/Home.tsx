@@ -59,7 +59,7 @@ function Body() {
 
 export function Home() {
   return (
-    <div className="h-screen w-screen bg-blue-600">
+    <div className="h-screen bg-blue-600">
       {Menu()}
       {Body()}
     </div>
