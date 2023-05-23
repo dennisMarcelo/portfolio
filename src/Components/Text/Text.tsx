@@ -17,7 +17,7 @@ export function Text({
   return (
     <Comp
       className={clsx(
-        'text-blue-100 font-sans',
+        'font-sans',
         {
           'text-xs': size === 'sm',
           'text-sm': size === 'md',
