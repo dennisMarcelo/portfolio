@@ -3,7 +3,7 @@ import { clsx } from 'clsx';
 import { Heading } from '../Heading/Heading';
 import { Hexagon } from '../../Icons/Hexagon';
 
-export interface SkillProps extends React.Component<React.HTMLAttributes<HTMLDivElement>>{
+export interface SkillProps extends React.HTMLAttributes<HTMLDivElement>{
     className?: string;
     skillName: string;
     proficiency: 1 | 2 | 3 | 4 | 5;
