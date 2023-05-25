@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx';
 
-export interface CardProps extends React.Component<React.HTMLAttributes<HTMLDivElement>>{
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement>{
     children : ReactNode;
     asChild?: boolean;
     className?: string;
