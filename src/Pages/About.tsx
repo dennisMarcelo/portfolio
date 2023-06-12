@@ -14,8 +14,7 @@ function Header() {
         <span className="text-yellow-200">Marcelo</span>
       </Heading>
       <Text className="text-blue-100 pt-3">
-        Meu nome é Dennis Marcelo dos Santos sou de
-        São Gonçalo/RJ. Sou formado em análise e desenvolvimento
+        Oi, eu sou o Dennis! Sou formado em análise e desenvolvimento
         de sistemas, um ex-tryber e atualmente sou desenvolvedor
         full-stack na Zheos Tecnologia/Motiva.
       </Text>
