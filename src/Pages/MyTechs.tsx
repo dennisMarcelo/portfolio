@@ -57,7 +57,7 @@ function CurrentTechs() {
 
 export function MyTechs() {
   return (
-    <div className="h-screen bg-blue-600">
+    <div className="min-h-screen bg-blue-600">
       {Header()}
       {OldTechs()}
       {CurrentTechs()}

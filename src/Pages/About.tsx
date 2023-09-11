@@ -46,7 +46,7 @@ function Body() {
 
 export function About() {
   return (
-    <div className="h-screen bg-blue-600">
+    <div className="min-h-screen bg-blue-600">
       {Header()}
       {Body()}
     </div>
