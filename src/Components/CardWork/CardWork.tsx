@@ -46,6 +46,9 @@ export function CardWork({
           'border-blue-200': color === 'blue-2',
           'border-blue-400': color === 'blue-4',
           'border-blue-500': color === 'blue-5',
+          'bg-blue-200': color === 'blue-2',
+          'bg-blue-400': color === 'blue-4',
+          'bg-blue-500': color === 'blue-5',
           'h-[190px]': size === 'h-md',
           'h-[250px]': size === 'h-lg',
         },
@@ -59,12 +62,14 @@ export function CardWork({
         {showButton
           ? [
             <Button
+              key="button-github"
               onClick={() => openInNewTab(pathGitHubRepository)}
               className="py-2 px-2 text-[14px] max-h-[40px]"
             >
               GitHub
             </Button>,
             <Button
+              key="button-page"
               onClick={() => openInNewTab(pathPage)}
               className="py-2 px-2 text-[14px] max-h-[40px] "
             >
