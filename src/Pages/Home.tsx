@@ -41,7 +41,7 @@ function Body() {
           <Heading size="lg" className="text-yellow-200 leading-none mb-2">FULL-STACK DEVELOPER</Heading>
           <Text size="sm" className="text-blue-200 leading-none mb-2">Seja bem-vindo ao meu portfólio</Text>
         </div>
-        <Button className="mb-40">Saiba mais sobre mim</Button>
+        <Button className="mb-40 py-5 px-8 bg-blue-400 text-blue-200 hover:bg-blue-300">Saiba mais sobre mim</Button>
         <div className=" flex space-x-7">
           <GitHubSVG />
           <LinkedinSVG />
@@ -59,7 +59,7 @@ function Body() {
 
 export function Home() {
   return (
-    <div className="h-screen bg-blue-600">
+    <div className="min-h-screen bg-blue-600">
       {Menu()}
       {Body()}
     </div>
