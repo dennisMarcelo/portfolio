@@ -16,7 +16,7 @@ export function Button({
   return (
     <Comp
       className={clsx(
-        'py-5 px-8 bg-blue-400 rounded-[20px] font-semibold text-blue-200 text-sm transition-colors hover:bg-blue-300 focus:ring-2 ring-w',
+        'rounded-[20px] font-semibold text-sm transition-colors focus:ring-2 ring-w bg-blue-400 text-blue-200 hover:bg-blue-300',
         className,
       )}
       {...props}
@@ -28,5 +28,5 @@ export function Button({
 
 Button.defaultProps = {
   asChild: false,
-  className: '',
+  className: 'bg-blue-400 text-blue-200 hover:bg-blue-300',
 };

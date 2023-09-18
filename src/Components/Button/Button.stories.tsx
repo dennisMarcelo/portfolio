@@ -7,6 +7,7 @@ export default {
   component: Button,
   args: {
     children: 'Saiba mais sobre mim',
+    className: 'py-5 px-8',
   },
   argTypes: {
 
