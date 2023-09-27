@@ -16,7 +16,7 @@ export function Button({
   return (
     <Comp
       className={clsx(
-        'rounded-[20px] font-semibold text-sm transition-colors focus:ring-2 ring-w bg-blue-400 text-blue-200 hover:bg-blue-300',
+        'rounded-[20px] font-semibold text-sm transition-colors focus:ring-2 ring-2 bg-blue-400 text-blue-200 hover:bg-blue-300',
         className,
       )}
       {...props}
