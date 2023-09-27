@@ -1,4 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {
+  Briefcase,
+  Envelope,
+  FolderSimpleUser,
+  House, List, User, X,
+} from 'phosphor-react';
+import { clsx } from 'clsx';
 import { HexagonTopPage } from '../Icons/HexagonTopPage';
 import { Heading } from '../Components/Heading/Heading';
 import { Text } from '../Components/Text/Text';
@@ -7,27 +14,81 @@ import { GitHubSVG } from '../Icons/GitHubSVG';
 import { InstagramSVG } from '../Icons/InstagramSVG';
 import { LinkedinSVG } from '../Icons/LinkedinSVG';
 import { HomeArtSVG } from '../Icons/HomeArtSVG';
+import './Home.css';
 
 function Menu() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
   return [
-    <div className="flex justify-center items-center pt-16 mb-20 gap-60">
+    <div
+      id="menu"
+      className="home-menu"
+    >
 
-      <div className="flex gap-5">
-        <HexagonTopPage />
-        <Heading size="sm" className="text-blue-200">
+      <div className="hexagono-name">
+        <HexagonTopPage className="hexagono-top-page" />
+        <Heading className="heading-top-page">
           Dennis Marcelo
         </Heading>
       </div>
 
-      <div className="flex gap-20  text-blue-200">
-        <Text size="sm" className="shrink-0">Home</Text>
-        <Text size="sm">About</Text>
-        <Text size="sm">Portfolio</Text>
-        <Text size="sm">Works</Text>
-        <Text size="sm">Contact</Text>
-      </div>
+      <button
+        onClick={() => setMenuIsVisible(true)}
+        type="button"
+        className="button-menu bg-blue-400"
+      >
+        <List size={32} />
+      </button>
 
+      <div className="options-menu">
+        <Text>Home</Text>
+        <Text>About</Text>
+        <Text>Portfolio</Text>
+        <Text>Works</Text>
+        <Text>Contact</Text>
+      </div>
     </div>,
+
+    <div
+      id="menu-mobile"
+      className={clsx(
+        'options-menu-mobile',
+        {
+          'menu-mobile-close': menuIsVisible === false,
+          'menu-mobile-open': menuIsVisible === true,
+        },
+      )}
+    >
+      <button
+        onClick={() => setMenuIsVisible(false)}
+        type="button"
+        className="button-menu-mobile bg-blue-500 "
+      >
+        <X size={32} />
+      </button>
+      <nav className="nav-menu-mobile">
+        <button type="button" className="buttons-menu-mobile">
+          <House size={36} />
+          <Text>Home</Text>
+        </button>
+        <button type="button" className="buttons-menu-mobile">
+          <User size={36} />
+          <Text>About</Text>
+        </button>
+        <button type="button" className="buttons-menu-mobile">
+          <FolderSimpleUser size={36} />
+          <Text>Portfolio</Text>
+        </button>
+        <button type="button" className="buttons-menu-mobile">
+          <Briefcase size={36} />
+          <Text>Works</Text>
+        </button>
+        <button type="button" className="buttons-menu-mobile">
+          <Envelope size={36} />
+          <Text>Contact</Text>
+        </button>
+      </nav>
+    </div>,
+
   ];
 }
 

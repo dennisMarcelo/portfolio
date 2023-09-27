@@ -1,0 +1,133 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hexagono-name {
+  @apply flex gap-5 ;
+}
+
+.hexagono-top-page {
+  @apply w-[51px] h-[55] items-center;
+}
+
+.heading-top-page {
+  @apply text-blue-200 text-sm;
+}
+
+.home-menu {
+  @apply flex justify-center items-center pt-16 mb-20 gap-60;
+}
+
+.button-menu {
+  @apply p-1 px-3 rounded-[10px] font-semibold text-sm transition-colors focus:ring-2 text-blue-200 hover:bg-blue-300 hidden;
+}
+
+.button-menu-mobile {
+  @apply p-1 px-3 rounded-[10px] font-semibold text-sm transition-colors focus:ring-2 text-blue-200 hover:bg-blue-300;
+}
+
+.options-menu {
+  @apply flex gap-20  text-blue-200;
+}
+
+.options-menu-mobile {
+  @apply fixed h-full text-yellow-200 w-9/12 top-0 p-11 bg-gradient-to-b from-blue-400 to-blue-600;
+
+  transition: 0.9s;
+}
+
+.menu-mobile-open {
+  @apply right-0;
+}
+
+.menu-mobile-close {
+  @apply right-[-100%];
+}
+
+.nav-menu-mobile {
+  @apply flex flex-col pt-14 pl-10 gap-5 text-md;
+}
+
+.buttons-menu-mobile {
+  @apply flex gap-5 items-center p-4 rounded-[20px] focus:bg-blue-300;
+}
+
+@media only screen and (max-width: 1536px) {
+  .options-menu {
+    @apply flex gap-16;
+  }
+
+  .home-menu {
+    @apply gap-52;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .options-menu {
+    @apply flex gap-12;
+  }
+
+  .home-menu {
+    @apply gap-44;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .options-menu {
+    @apply flex gap-9;
+  }
+
+  .home-menu {
+    @apply gap-36;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .options-menu {
+    @apply flex gap-6;
+  }
+
+  .home-menu {
+    @apply gap-28;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .options-menu {
+    @apply hidden;
+  }
+
+  .home-menu {
+    @apply gap-60;
+  }
+
+  .button-menu {
+    @apply block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-top-page {
+    @apply hidden;
+  }
+
+  .options-menu-mobile {
+    @apply w-full;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .home-menu {
+    @apply gap-36;
+  }
+}
+
+
+.heading-home {
+  @apply 2xl:text-lg xl:text-md lg:text-md text-yellow-200 leading-none mb-2;
+}
+
+.text-home {
+  @apply text-blue-200 leading-none mb-2;
+}
