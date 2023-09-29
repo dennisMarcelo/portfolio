@@ -1,8 +1,10 @@
+/* stylelint-disable max-line-length */
 /* stylelint-disable at-rule-no-unknown */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Menu */
 .hexagono-name {
   @apply flex gap-5 ;
 }
@@ -53,6 +55,45 @@
   @apply flex gap-5 items-center p-4 rounded-[20px] focus:bg-blue-300;
 }
 
+/* Body */
+.salutation-texts {
+  @apply mb-32;
+}
+
+.text-home {
+  @apply text-blue-200 leading-none mb-2;
+
+  font-size: 1.5em;
+}
+
+.heading-home {
+  @apply text-yellow-200 leading-none mb-2 text-lg;
+
+  font-size: 4em;
+}
+
+.home-art-svg {
+  @apply w-[705px] h-[697px];
+}
+
+.button-about-me-home {
+  @apply mb-40 text-sm py-5 px-8 bg-blue-400 text-blue-200 hover:bg-blue-300;
+}
+
+@media only screen and (max-width: 1600px) {
+  .text-home {
+    font-size: 1.3em;
+  }
+
+  .heading-home {
+    font-size: 3.5em;
+  }
+
+  .home-art-svg {
+    @apply w-[605px] h-[597px];
+  }
+}
+
 @media only screen and (max-width: 1536px) {
   .options-menu {
     @apply flex gap-16;
@@ -60,6 +101,28 @@
 
   .home-menu {
     @apply gap-52;
+  }
+
+  .salutation-texts {
+    @apply mb-28;
+  }
+
+  .button-about-me-home {
+    @apply mb-36 py-4 px-7;
+
+    font-size: 1.4em;
+  }
+
+  .text-home {
+    font-size: 1.2em;
+  }
+
+  .heading-home {
+    font-size: 3em;
+  }
+
+  .home-art-svg {
+    @apply w-[555px] h-[547px];
   }
 }
 
@@ -71,6 +134,28 @@
   .home-menu {
     @apply gap-44;
   }
+
+  .salutation-texts {
+    @apply mb-24;
+  }
+
+  .button-about-me-home {
+    @apply mb-32 py-4 px-7;
+
+    font-size: 1.3em;
+  }
+
+  .text-home {
+    font-size: 1em;
+  }
+
+  .heading-home {
+    font-size: 2.5em;
+  }
+
+  .home-art-svg {
+    @apply w-[505px] h-[497px];
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -81,6 +166,28 @@
   .home-menu {
     @apply gap-36;
   }
+
+  .salutation-texts {
+    @apply mb-20;
+  }
+
+  .button-about-me-home {
+    @apply mb-28 py-4 px-7;
+
+    font-size: 1.2em;
+  }
+
+  .text-home {
+    font-size: 0.9em;
+  }
+
+  .heading-home {
+    font-size: 2.3em;
+  }
+
+  .home-art-svg {
+    @apply w-[455px] h-[447px];
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -90,6 +197,28 @@
 
   .home-menu {
     @apply gap-28;
+  }
+
+  .salutation-texts {
+    @apply mb-16;
+  }
+
+  .button-about-me-home {
+    @apply mb-24 py-4 px-7;
+
+    font-size: 1.1em;
+  }
+
+  .text-home {
+    font-size: 0.8em;
+  }
+
+  .heading-home {
+    font-size: 2.1em;
+  }
+
+  .home-art-svg {
+    @apply w-[355px] h-[447px];
   }
 }
 
@@ -105,6 +234,37 @@
   .button-menu {
     @apply block;
   }
+
+  .salutation-texts {
+    margin-bottom: 10vh;
+  }
+
+  .button-about-me-home {
+    @apply py-4 px-7;
+
+    font-size: 1.4em;
+    margin-bottom: 15vh;
+  }
+
+  .text-home {
+    font-size: 1.2em;
+  }
+
+  .heading-home {
+    font-size: 2.5em;
+  }
+
+  .home-art-svg {
+    display: none;
+  }
+
+  .center-itens-mobile {
+    @apply flex flex-col content-center;
+  }
+
+  .center-icons-mobile {
+    @apply justify-center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,19 +275,34 @@
   .options-menu-mobile {
     @apply w-full;
   }
+
+  .button-about-me-home {
+    font-size: 1.4em;
+  }
+
+  .text-home {
+    font-size: 0.9em;
+  }
+
+  .heading-home {
+    font-size: 1.8em;
+  }
 }
 
 @media only screen and (max-width: 390px) {
   .home-menu {
     @apply gap-36;
   }
-}
 
+  .button-about-me-home {
+    font-size: 1.2em;
+  }
 
-.heading-home {
-  @apply 2xl:text-lg xl:text-md lg:text-md text-yellow-200 leading-none mb-2;
-}
+  .text-home {
+    font-size: 0.7em;
+  }
 
-.text-home {
-  @apply text-blue-200 leading-none mb-2;
+  .heading-home {
+    font-size: 1.6em;
+  }
 }

@@ -94,26 +94,25 @@ function Menu() {
 
 function Body() {
   return [
-    <div className="flex justify-evenly">
-      <div>
-        <div className="mb-32">
-          <Text size="sm" className="text-blue-200 leading-none mb-2">Olá pessoas,</Text>
-          <Heading size="lg" className="text-yellow-200 leading-none mb-2">EU SOU UM</Heading>
-          <Heading size="lg" className="text-yellow-200 leading-none mb-2">FULL-STACK DEVELOPER</Heading>
-          <Text size="sm" className="text-blue-200 leading-none mb-2">Seja bem-vindo ao meu portfólio</Text>
+    <div className="flex justify-evenly ">
+      <div className="center-itens-mobile">
+        <div className="salutation-texts">
+          <Text className="text-home">Olá pessoas,</Text>
+          <Heading className="heading-home">EU SOU UM</Heading>
+          <Heading className="heading-home">FULL-STACK DEVELOPER</Heading>
+          <Text className="text-home">Seja bem-vindo ao meu portfólio</Text>
         </div>
-        <Button className="mb-40 py-5 px-8 bg-blue-400 text-blue-200 hover:bg-blue-300">Saiba mais sobre mim</Button>
-        <div className=" flex space-x-7">
+
+        <Button className="button-about-me-home">Saiba mais sobre mim</Button>
+
+        <div className=" flex space-x-7 center-icons-mobile">
           <GitHubSVG />
           <LinkedinSVG />
           <InstagramSVG />
         </div>
       </div>
 
-      <div>
-        <HomeArtSVG />
-      </div>
-
+      <HomeArtSVG className="home-art-svg" />
     </div>,
   ];
 }

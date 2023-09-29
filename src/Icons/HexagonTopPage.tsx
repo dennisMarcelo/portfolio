@@ -6,8 +6,6 @@ export interface HexagonProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function HexagonTopPage({ ...props }: HexagonProps) {
   return (
     <svg
-      width="51"
-      height="55"
       viewBox="0 0 51 55"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

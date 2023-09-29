@@ -31,7 +31,7 @@ export function Text({
 }
 
 Text.defaultProps = {
-  size: 'md',
+  size: '',
   asChild: false,
   className: 'text-blue-100',
 };

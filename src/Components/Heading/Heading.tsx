@@ -32,7 +32,7 @@ export function Heading({
 }
 
 Heading.defaultProps = {
-  size: 'md',
+  size: '',
   asChild: false,
   className: '',
 };

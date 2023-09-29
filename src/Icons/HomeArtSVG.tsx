@@ -6,8 +6,6 @@ export interface HomeArtProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function HomeArtSVG({ ...props }: HomeArtProps) {
   return (
     <svg
-      width="705"
-      height="697"
       viewBox="0 0 705 697"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
