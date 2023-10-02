@@ -18,82 +18,83 @@ import './Home.css';
 
 function Menu() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
-  return [
-    <div
-      id="menu"
-      className="home-menu"
-    >
-
-      <div className="hexagono-name">
-        <HexagonTopPage className="hexagono-top-page" />
-        <Heading className="heading-top-page">
-          Dennis Marcelo
-        </Heading>
-      </div>
-
-      <button
-        onClick={() => setMenuIsVisible(true)}
-        type="button"
-        className="button-menu bg-blue-400"
+  return (
+    <>
+      <div
+        id="menu"
+        className="home-menu"
       >
-        <List size={32} />
-      </button>
 
-      <div className="options-menu">
-        <Text>Home</Text>
-        <Text>About</Text>
-        <Text>Portfolio</Text>
-        <Text>Works</Text>
-        <Text>Contact</Text>
-      </div>
-    </div>,
+        <div className="hexagono-name">
+          <HexagonTopPage className="hexagono-top-page" />
+          <Heading className="heading-top-page">
+            Dennis Marcelo
+          </Heading>
+        </div>
 
-    <div
-      id="menu-mobile"
-      className={clsx(
-        'options-menu-mobile',
-        {
-          'menu-mobile-close': menuIsVisible === false,
-          'menu-mobile-open': menuIsVisible === true,
-        },
-      )}
-    >
-      <button
-        onClick={() => setMenuIsVisible(false)}
-        type="button"
-        className="button-menu-mobile bg-blue-500 "
-      >
-        <X size={32} />
-      </button>
-      <nav className="nav-menu-mobile">
-        <button type="button" className="buttons-menu-mobile">
-          <House size={36} />
+        <button
+          onClick={() => setMenuIsVisible(true)}
+          type="button"
+          className="button-menu bg-blue-400"
+        >
+          <List size={32} />
+        </button>
+
+        <div className="options-menu">
           <Text>Home</Text>
-        </button>
-        <button type="button" className="buttons-menu-mobile">
-          <User size={36} />
           <Text>About</Text>
-        </button>
-        <button type="button" className="buttons-menu-mobile">
-          <FolderSimpleUser size={36} />
           <Text>Portfolio</Text>
-        </button>
-        <button type="button" className="buttons-menu-mobile">
-          <Briefcase size={36} />
           <Text>Works</Text>
-        </button>
-        <button type="button" className="buttons-menu-mobile">
-          <Envelope size={36} />
           <Text>Contact</Text>
-        </button>
-      </nav>
-    </div>,
+        </div>
+      </div>
 
-  ];
+      <div
+        id="menu-mobile"
+        className={clsx(
+          'options-menu-mobile',
+          {
+            'menu-mobile-close': menuIsVisible === false,
+            'menu-mobile-open': menuIsVisible === true,
+          },
+        )}
+      >
+        <button
+          onClick={() => setMenuIsVisible(false)}
+          type="button"
+          className="button-menu-mobile bg-blue-500 "
+        >
+          <X size={32} />
+        </button>
+        <nav className="nav-menu-mobile">
+          <button type="button" className="buttons-menu-mobile">
+            <House size={36} />
+            <Text>Home</Text>
+          </button>
+          <button type="button" className="buttons-menu-mobile">
+            <User size={36} />
+            <Text>About</Text>
+          </button>
+          <button type="button" className="buttons-menu-mobile">
+            <FolderSimpleUser size={36} />
+            <Text>Portfolio</Text>
+          </button>
+          <button type="button" className="buttons-menu-mobile">
+            <Briefcase size={36} />
+            <Text>Works</Text>
+          </button>
+          <button type="button" className="buttons-menu-mobile">
+            <Envelope size={36} />
+            <Text>Contact</Text>
+          </button>
+        </nav>
+      </div>
+    </>
+  );
 }
 
 function Body() {
-  return [
+  return (
     <div className="flex justify-evenly ">
       <div className="center-itens-mobile">
         <div className="salutation-texts">
@@ -113,8 +114,8 @@ function Body() {
       </div>
 
       <HomeArtSVG className="home-art-svg" />
-    </div>,
-  ];
+    </div>
+  );
 }
 
 export function Home() {
