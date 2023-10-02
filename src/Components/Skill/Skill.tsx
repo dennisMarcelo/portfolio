@@ -2,6 +2,7 @@ import React from 'react';
 import { clsx } from 'clsx';
 import { Heading } from '../Heading/Heading';
 import { Hexagon } from '../../Icons/Hexagon';
+import { geradorCaracteresAleatorio } from '../../helpers/Utils';
 
 export interface SkillProps extends React.HTMLAttributes<HTMLDivElement>{
     className?: string;
@@ -14,9 +15,9 @@ function getHexagon(proficiency:number) {
 
   for (let i = 1; i <= 5; i += 1) {
     if (i <= proficiency) {
-      hexagons.push(<Hexagon color="y-200" />);
+      hexagons.push(<Hexagon key={geradorCaracteresAleatorio(6)} color="y-200" />);
     } else {
-      hexagons.push(<Hexagon color="y-50" />);
+      hexagons.push(<Hexagon key={geradorCaracteresAleatorio(6)} color="y-50" />);
     }
   }
 
