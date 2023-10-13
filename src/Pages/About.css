@@ -1,0 +1,109 @@
+/* stylelint-disable max-line-length */
+/* stylelint-disable at-rule-no-unknown */
+
+.heading-about {
+  @apply text-center pt-4;
+
+  font-size: 4em;
+}
+
+.text-about {
+  @apply text-blue-100 pt-3;
+
+  font-size: 1.5em;
+}
+
+.skills {
+  @apply flex flex-wrap gap-12 overflow-x-auto m-auto;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 1280px) {
+  .heading-about {
+    @apply pt-3;
+
+    font-size: 3.4em;
+  }
+
+  .text-about {
+    @apply pt-3;
+
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading-about {
+    @apply pt-3;
+
+    font-size: 3.3em;
+  }
+
+  .text-about {
+    @apply pt-3;
+
+    font-size: 1.4em;
+  }
+
+  .skills {
+    @apply w-[736px];
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .heading-about {
+    @apply pt-2;
+
+    font-size: 3.2em;
+  }
+
+  .text-about {
+    @apply pt-2;
+
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-about {
+    @apply pt-1;
+
+    font-size: 3.1em;
+  }
+
+  .text-about {
+    @apply pt-1;
+
+    font-size: 1.2em;
+  }
+
+  .skills {
+    @apply w-[476px];
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-about {
+    font-size: 2.6em;
+  }
+
+  .text-about {
+    font-size: 1em;
+  }
+
+  .skills {
+    @apply w-[220px];
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .heading-about {
+    font-size: 2.3em;
+  }
+
+  .text-about {
+    font-size: 0.8em;
+  }
+}
