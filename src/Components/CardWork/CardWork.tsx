@@ -8,7 +8,6 @@ export interface imageDto {
 
 export interface CardWorkProps extends React.HTMLAttributes<HTMLDivElement>{
   className?: string;
-  size: 'h-md' | 'h-lg';
   color: 'blue-2' | 'blue-4' | 'blue-5'
   image: imageDto,
   pathGitHubRepository: string,
@@ -16,7 +15,7 @@ export interface CardWorkProps extends React.HTMLAttributes<HTMLDivElement>{
 }
 
 export function CardWork({
-  className, size, color, image, pathGitHubRepository, pathPage, ...props
+  className, color, image, pathGitHubRepository, pathPage, ...props
 }: CardWorkProps) {
   const [path, setPath] = useState(image.pathStaic);
   const [showButton, setShowButton] = useState(false);
@@ -41,7 +40,7 @@ export function CardWork({
       onMouseEnter={() => setMoutEnter()}
       onMouseLeave={() => setMoutLeave()}
       className={clsx(
-        'rounded-[20px] min-w-[428px] max-w-[428px] border-8 ',
+        'rounded-[20px]',
         {
           'border-blue-200': color === 'blue-2',
           'border-blue-400': color === 'blue-4',
@@ -49,8 +48,6 @@ export function CardWork({
           'bg-blue-200': color === 'blue-2',
           'bg-blue-400': color === 'blue-4',
           'bg-blue-500': color === 'blue-5',
-          'h-[190px]': size === 'h-md',
-          'h-[250px]': size === 'h-lg',
         },
         className,
       )}
