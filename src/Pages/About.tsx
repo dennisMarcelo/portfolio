@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import hexagonoPefil from '../Icons/HexagonoPerfil.png';
 import { Heading } from '../Components/Heading/Heading';
 import { Text } from '../Components/Text/Text';
@@ -70,30 +70,30 @@ function getSkillsOdd(s:SkillInterface, index: number) {
 }
 
 function Body() {
-  const [scrollToLef, setScrollToLef] = useState(true);
-  const [contStrcon, setContStrcon] = useState(0);
+  // const [scrollToLef, setScrollToLef] = useState(true);
+  // const [contStrcon, setContStrcon] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const skillMetric = document.getElementById('skills-metric') || { scrollLeft: 0 };
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const skillMetric = document.getElementById('skills-metric') || { scrollLeft: 0 };
 
-      const unit = 1;
+  //     const unit = 1;
 
-      if (scrollToLef) {
-        skillMetric.scrollLeft += unit;
-        setContStrcon(skillMetric.scrollLeft += unit);
-      } else {
-        skillMetric.scrollLeft -= unit;
-        setContStrcon(skillMetric.scrollLeft -= unit);
-      }
+  //     if (scrollToLef) {
+  //       skillMetric.scrollLeft += unit;
+  //       setContStrcon(skillMetric.scrollLeft += unit);
+  //     } else {
+  //       skillMetric.scrollLeft -= unit;
+  //       setContStrcon(skillMetric.scrollLeft -= unit);
+  //     }
 
-      if (contStrcon === skillMetric.scrollLeft) {
-        setScrollToLef(!scrollToLef);
-      }
-    }, 20);
+  //     if (contStrcon === skillMetric.scrollLeft) {
+  //       setScrollToLef(!scrollToLef);
+  //     }
+  //   }, 20);
 
-    return () => clearInterval(interval);
-  });
+  //   return () => clearInterval(interval);
+  // });
 
   return (
     <div className="max-w-5xl m-auto mt-8 pr-4 pl-4">

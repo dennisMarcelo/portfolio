@@ -14,10 +14,21 @@
 }
 
 .skills {
-  @apply flex flex-wrap gap-12 overflow-x-auto m-auto;
+  @apply flex flex-wrap gap-12 overflow-x-auto m-auto py-3;
+}
 
-  overflow-x: hidden;
-  overflow-y: hidden;
+.skills::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+  background: #d6ebff;
+}
+
+.skills::-webkit-scrollbar-track {
+  background: #d6ebff;
+}
+
+.skills::-webkit-scrollbar-thumb {
+  background: #001d3d;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -94,7 +105,7 @@
   }
 
   .skills {
-    @apply w-[220px];
+    @apply w-[310px];
   }
 }
 
