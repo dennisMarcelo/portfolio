@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   Briefcase,
-  Envelope,
+  // Envelope,
   FolderSimpleUser,
   House, List, User, X,
 } from 'phosphor-react';
@@ -45,7 +45,7 @@ function Menu() {
           <Text>About</Text>
           <Text>Portfolio</Text>
           <Text>Works</Text>
-          <Text>Contact</Text>
+          {/* <Text>Contact</Text> */}
         </div>
       </div>
 
@@ -83,10 +83,10 @@ function Menu() {
             <Briefcase size={36} />
             <Text>Works</Text>
           </button>
-          <button type="button" className="buttons-menu-mobile">
+          {/* <button type="button" className="buttons-menu-mobile">
             <Envelope size={36} />
             <Text>Contact</Text>
-          </button>
+          </button> */}
         </nav>
       </div>
     </>
