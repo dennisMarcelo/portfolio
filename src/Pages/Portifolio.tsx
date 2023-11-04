@@ -80,7 +80,7 @@ export function Portifolio() {
   const [jobsFilter, setJobsFilter] = useState(jobsFilterEnum.todos);
 
   return (
-    <div className="min-h-screen bg-blue-600">
+    <div className="min-h-screen bg-blue-600 pt-[10%]">
       {Header()}
       {filter(setJobsFilter)}
       {Body(jobsFilter)}
