@@ -17,7 +17,7 @@ export function Card({
   return (
     <Comp
       className={clsx(
-        'flex flex-col py-9 px-4 text-center rounded-[20px] max-w-[527px] blue-400',
+        '',
         {
           'bg-blue-400': color === 'blue-400',
           'bg-blue-500': color === 'blue-500',

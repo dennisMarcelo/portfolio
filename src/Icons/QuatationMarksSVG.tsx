@@ -6,8 +6,6 @@ export interface QuatationMarksSVGProps extends SVGAttributes<HTMLOrSVGElement> 
 export function QuatationMarksSVG({ ...props }: QuatationMarksSVGProps) {
   return (
     <svg
-      width="90"
-      height="90"
       viewBox="0 0 90 90"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
