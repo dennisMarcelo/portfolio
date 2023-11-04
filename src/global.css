@@ -6,3 +6,9 @@
 .custom-buttom {
   @layer bg-blue-500 px-4 h-10 rounded text-blue-100 hover:bg-blue-700;
 }
+
+.div-top {
+  display: float;
+  top: 0;
+  left: 0;
+}

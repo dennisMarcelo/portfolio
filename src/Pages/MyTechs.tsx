@@ -11,10 +11,10 @@ import './MyTechs.css';
 
 function Header() {
   return (
-    <Heading className="heading-mtech">
+    <Heading className="heading-mtech leading-none">
       <span className="text-blue-200">Minhas</span>
       {' '}
-      <span className="text-yellow-200">Techs</span>
+      <span className="text-yellow-200">Ferramentas</span>
     </Heading>
   );
 }
@@ -67,7 +67,8 @@ function CurrentTechs() {
 
 export function MyTechs() {
   return (
-    <div className="min-h-screen pt-[5%] pb-[5%] bg-blue-600">
+    <div className="min-h-screen pb-[5%] bg-blue-600">
+      <div className="div-top" id="tools" />
       {Header()}
       {OldTechs()}
       {CurrentTechs()}
