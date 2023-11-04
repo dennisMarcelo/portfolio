@@ -6,8 +6,6 @@ export interface HTMLSVGProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function HTMLSVG({ ...props }: HTMLSVGProps) {
   return (
     <svg
-      width="100"
-      height="106"
       viewBox="0 0 100 106"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

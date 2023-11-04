@@ -6,8 +6,6 @@ export interface NodeSVGProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function NodeSVG({ ...props }: NodeSVGProps) {
   return (
     <svg
-      width="99"
-      height="106"
       viewBox="0 0 99 106"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -6,8 +6,6 @@ export interface ReactSVGProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function ReactSVG({ ...props }: ReactSVGProps) {
   return (
     <svg
-      width="107"
-      height="96"
       viewBox="0 0 107 96"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

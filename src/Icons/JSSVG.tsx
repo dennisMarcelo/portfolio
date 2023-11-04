@@ -6,8 +6,6 @@ export interface JSSVGProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function JSSVG({ ...props }: JSSVGProps) {
   return (
     <svg
-      width="107"
-      height="107"
       viewBox="0 0 107 107"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

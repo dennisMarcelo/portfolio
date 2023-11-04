@@ -6,8 +6,6 @@ export interface CSSSVGProps extends SVGAttributes<HTMLOrSVGElement> {}
 export function CSSSVG({ ...props }: CSSSVGProps) {
   return (
     <svg
-      width="95"
-      height="106"
       viewBox="0 0 95 106"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
