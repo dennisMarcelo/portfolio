@@ -7,10 +7,11 @@ import { CSSSVG } from '../Icons/CSSSVG';
 import { JSSVG } from '../Icons/JSSVG';
 import { ReactSVG } from '../Icons/ReactSVG';
 import { PythonSVG } from '../Icons/PythonSVG';
+import './MyTechs.css';
 
 function Header() {
   return (
-    <Heading className="pt-9 mb-28 text-center ">
+    <Heading className="heading-mtech">
       <span className="text-blue-200">Minhas</span>
       {' '}
       <span className="text-yellow-200">Techs</span>
@@ -20,16 +21,25 @@ function Header() {
 
 function OldTechs() {
   return (
-    <div className="max-w-5xl m-auto leading-none text-center mb-28">
-      <Text>Tecnologias</Text>
-      <Heading size="sm" className="pt-4 mb-8">
+    <div className="techs">
+      <Text className="text-subtitle">Tecnologias</Text>
+      <Heading className="heading-subtitle">
         <span className="text-yellow-200">Já</span>
         {' '}
         <span className="text-blue-200">Utilizadas</span>
       </Heading>
-      <div className="flex gap-11 flex-wrap justify-center">
-        <PythonSVG />
-
+      <div className="techs-icons">
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
+        <PythonSVG className="icon" />
       </div>
     </div>
   );
@@ -37,19 +47,19 @@ function OldTechs() {
 
 function CurrentTechs() {
   return (
-    <div className="max-w-5xl m-auto leading-none text-center">
-      <Text>Tecnologias</Text>
-      <Heading size="sm" className="pt-4 mb-8">
-        <span className="text-yellow-200">Atualmente</span>
+    <div className="techs">
+      <Text className="text-subtitle">Tecnologias</Text>
+      <Heading size="sm" className="heading-subtitle">
+        <span className="text-yellow-200">Utilizando</span>
         {' '}
-        <span className="text-blue-200">Desenvolvendo</span>
+        <span className="text-blue-200">Atualmente</span>
       </Heading>
-      <div className="flex gap-11 flex-wrap justify-center">
-        <NodeSVG />
-        <HTMLSVG />
-        <CSSSVG />
-        <JSSVG />
-        <ReactSVG />
+      <div className="techs-icons">
+        <NodeSVG className="icon" />
+        <HTMLSVG className="icon" />
+        <CSSSVG className="icon" />
+        <JSSVG className="icon" />
+        <ReactSVG className="icon" />
       </div>
     </div>
   );
@@ -57,7 +67,7 @@ function CurrentTechs() {
 
 export function MyTechs() {
   return (
-    <div className="min-h-screen bg-blue-600">
+    <div className="min-h-screen pt-[5%] pb-[5%] bg-blue-600">
       {Header()}
       {OldTechs()}
       {CurrentTechs()}
