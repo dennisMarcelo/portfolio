@@ -25,6 +25,7 @@ const skills: Array<SkillInterface> = [
   { proficiency: 2, skillName: 'Jest' },
   { proficiency: 3, skillName: 'MongoDB' },
   { proficiency: 1, skillName: 'Handlebars' },
+  { proficiency: 2, skillName: 'Tailwind' },
 ];
 
 function Header() {

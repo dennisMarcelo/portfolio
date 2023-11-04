@@ -7,7 +7,17 @@ import { CSSSVG } from '../Icons/CSSSVG';
 import { JSSVG } from '../Icons/JSSVG';
 import { ReactSVG } from '../Icons/ReactSVG';
 import { PythonSVG } from '../Icons/PythonSVG';
+import { HandlebarsSVG } from '../Icons/HandlebarsSVG';
+import { ReduxSvg } from '../Icons/ReduxSvg';
+import { JestSvg } from '../Icons/JestSvg';
+import { MongoDbSVG } from '../Icons/MongoDbSVG';
 import './MyTechs.css';
+import { MysqlSVG } from '../Icons/MysqlSVG';
+import { LinuxSVG } from '../Icons/LinuxSVG';
+import { StencilSVG } from '../Icons/StencilSVG';
+import { IonicSVG } from '../Icons/IonicSVG';
+import { TailwindSVG } from '../Icons/TailwindSVG';
+import { CSharpSVG } from '../Icons/CSharpSVG';
 
 function Header() {
   return (
@@ -30,16 +40,12 @@ function OldTechs() {
       </Heading>
       <div className="techs-icons">
         <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
-        <PythonSVG className="icon" />
+        <HandlebarsSVG className="icon" />
+        <ReduxSvg className="icon" />
+        <JestSvg className="icon" />
+        <MongoDbSVG className="icon" />
+        <MysqlSVG className="icon" />
+        <TailwindSVG className="icon" />
       </div>
     </div>
   );
@@ -55,11 +61,15 @@ function CurrentTechs() {
         <span className="text-blue-200">Atualmente</span>
       </Heading>
       <div className="techs-icons">
+        <CSharpSVG className="icon" />
+        <JSSVG className="icon" />
         <NodeSVG className="icon" />
         <HTMLSVG className="icon" />
         <CSSSVG className="icon" />
-        <JSSVG className="icon" />
         <ReactSVG className="icon" />
+        <LinuxSVG className="icon" />
+        <StencilSVG className="icon" />
+        <IonicSVG className="icon" />
       </div>
     </div>
   );
