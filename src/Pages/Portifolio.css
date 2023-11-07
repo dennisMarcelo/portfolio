@@ -42,7 +42,7 @@
 }
 
 .card-work {
-  @apply min-w-[428px] max-w-[428px] border-8;
+  @apply min-w-[374px] max-w-[374px] min-h-[195px] max-h-[195px] border-8;
 }
 
 /* screen width */
