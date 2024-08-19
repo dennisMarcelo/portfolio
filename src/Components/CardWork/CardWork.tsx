@@ -61,14 +61,14 @@ export function CardWork({
             <Button
               key="button-github"
               onClick={() => openInNewTab(pathGitHubRepository)}
-              className="py-2 px-2 text-[14px] max-h-[40px]"
+              className="py-2 px-2 text-[14px] max-h-[40px] bg-blue-400 text-blue-200 hover:bg-blue-300"
             >
               GitHub
             </Button>,
             <Button
               key="button-page"
               onClick={() => openInNewTab(pathPage)}
-              className="py-2 px-2 text-[14px] max-h-[40px] "
+              className="py-2 px-2 text-[14px] max-h-[40px] bg-blue-400 text-blue-200 hover:bg-blue-300"
             >
               Página
             </Button>]
