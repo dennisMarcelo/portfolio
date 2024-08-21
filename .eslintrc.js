@@ -28,5 +28,6 @@ module.exports = {
     'react/destructuring-assignment': [0, 'always'],
     'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
+    'linebreak-style': 0,
   },
 };
