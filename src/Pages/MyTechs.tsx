@@ -77,8 +77,7 @@ function CurrentTechs() {
 
 export function MyTechs() {
   return (
-    <div className="min-h-screen pb-[5%]">
-      <div className="div-top" id="tools" />
+    <div className="pb-[5%]">
       {Header()}
       {OldTechs()}
       {CurrentTechs()}

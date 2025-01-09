@@ -38,9 +38,9 @@ const router = createBrowserRouter([
 
 export function App() {
   return (
-    <>
+    <div className="min-h-screen">
       <Menu />
       <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-    </>
+    </div>
   );
 }

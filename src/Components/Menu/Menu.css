@@ -18,7 +18,7 @@
 }
 
 .home-menu {
-  @apply flex justify-center items-center pt-16 mb-20 gap-60;
+  @apply flex justify-center items-center pt-10 gap-60;
 }
 
 .button-menu {

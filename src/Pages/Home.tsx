@@ -20,7 +20,7 @@ function Body() {
           <Text className="text-home">Seja bem-vindo ao meu portfólio</Text>
         </div>
 
-        <a href="#about">
+        <a href="/about">
           <Button className="button-about-me-home">Saiba mais sobre mim</Button>
         </a>
 
@@ -46,7 +46,7 @@ function Body() {
 
 export function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="mt-20">
       <div className="div-top" id="home" />
       {Body()}
     </div>

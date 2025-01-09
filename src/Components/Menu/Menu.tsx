@@ -15,6 +15,10 @@ import { HexagonTopPage } from '../../Icons/HexagonTopPage';
 import { Heading } from '../Heading/Heading';
 import { Text } from '../Text/Text';
 
+function RedirectPage(page:string) {
+  window.location.href = page;
+}
+
 export function Menu() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
@@ -67,41 +71,32 @@ export function Menu() {
           <X size={32} />
         </button>
         <nav className="nav-menu-mobile">
-          <a href="/">
 
-            <button type="button" className="buttons-menu-mobile">
-              <House size={36} />
-              <Text>Home</Text>
-            </button>
-          </a>
+          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/')}>
+            <House size={36} />
+            <Text>Home</Text>
+          </button>
 
-          <a href="/about">
-            <button type="button" className="buttons-menu-mobile">
-              <User size={36} />
-              <Text>About</Text>
-            </button>
-          </a>
+          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/about')}>
+            <User size={36} />
+            <Text>About</Text>
+          </button>
 
-          <a href="/portfolio">
-            <button type="button" className="buttons-menu-mobile">
-              <FolderSimpleUser size={36} />
-              <Text>Portfolio</Text>
-            </button>
-          </a>
+          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/portfolio')}>
+            <FolderSimpleUser size={36} />
+            <Text>Portfolio</Text>
+          </button>
 
-          <a href="/my-techs">
-            <button type="button" className="buttons-menu-mobile">
-              <Wrench size={36} />
-              <Text>Tools</Text>
-            </button>
-          </a>
+          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/my-techs')}>
+            <Wrench size={36} />
+            <Text>Tools</Text>
+          </button>
 
-          <a href="/professional-experience">
-            <button type="button" className="buttons-menu-mobile">
-              <Briefcase size={36} />
-              <Text>Works</Text>
-            </button>
-          </a>
+          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/professional-experience')}>
+            <Briefcase size={36} />
+            <Text>Works</Text>
+          </button>
+
           {/* <button type="button" className="buttons-menu-mobile">
             <Envelope size={36} />
             <Text>Contact</Text>

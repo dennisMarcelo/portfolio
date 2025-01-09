@@ -122,7 +122,7 @@ function Body() {
 
 export function About() {
   return (
-    <div className="min-h-screen bg-blue-600 pb-[5%]">
+    <div className="pb-[3%]">
       <div className="div-top" id="about" />
       {Header()}
       {Body()}
