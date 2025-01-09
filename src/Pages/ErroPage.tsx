@@ -1,8 +1,9 @@
 /* eslint-disable linebreak-style */
+import React from 'react';
 import { useRouteError } from 'react-router-dom';
 
 export default function ErrorPage() {
-  const error = useRouteError();
+  const error: any = useRouteError();
   console.error(error);
 
   return (
@@ -11,7 +12,6 @@ export default function ErrorPage() {
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
         <i>{error.statusText || error.message}</i>
-        1
       </p>
     </div>
   );
