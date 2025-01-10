@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
-import { } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../global.css';
 import './Menu.css';
 
@@ -14,10 +14,6 @@ import {
 import { HexagonTopPage } from '../../Icons/HexagonTopPage';
 import { Heading } from '../Heading/Heading';
 import { Text } from '../Text/Text';
-
-function RedirectPage(page:string) {
-  window.location.href = page;
-}
 
 export function Menu() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -44,11 +40,11 @@ export function Menu() {
         </button>
 
         <div className="options-menu">
-          <Text><a href="/">Home</a></Text>
-          <Text><a href="/about">About</a></Text>
-          <Text><a href="/portfolio">Portfolio</a></Text>
-          <Text><a href="/my-techs">Tools</a></Text>
-          <Text><a href="/professional-experience">Works</a></Text>
+          <Text><Link to="/Portfolio/">Home</Link></Text>
+          <Text><Link to="/Portfolio/about">About</Link></Text>
+          <Text><Link to="/Portfolio/portfolio">Portfolio</Link></Text>
+          <Text><Link to="/Portfolio/my-techs">Tools</Link></Text>
+          <Text><Link to="/Portfolio/professional-experience">Works</Link></Text>
           {/* <Text>Contact</Text> */}
         </div>
       </div>
@@ -72,29 +68,49 @@ export function Menu() {
         </button>
         <nav className="nav-menu-mobile">
 
-          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/')}>
+          <button
+            type="button"
+            className="buttons-menu-mobile"
+            onClick={() => setMenuIsVisible(false)}
+          >
             <House size={36} />
-            <Text>Home</Text>
+            <Text><Link to="/Portfolio/">Home </Link></Text>
           </button>
 
-          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/about')}>
+          <button
+            type="button"
+            className="buttons-menu-mobile"
+            onClick={() => setMenuIsVisible(false)}
+          >
             <User size={36} />
-            <Text>About</Text>
+            <Text><Link to="/Portfolio/about">About</Link></Text>
           </button>
 
-          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/portfolio')}>
+          <button
+            type="button"
+            className="buttons-menu-mobile"
+            onClick={() => setMenuIsVisible(false)}
+          >
             <FolderSimpleUser size={36} />
-            <Text>Portfolio</Text>
+            <Text><Link to="/Portfolio/portfolio">Portfolio</Link></Text>
           </button>
 
-          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/my-techs')}>
+          <button
+            type="button"
+            className="buttons-menu-mobile"
+            onClick={() => setMenuIsVisible(false)}
+          >
             <Wrench size={36} />
-            <Text>Tools</Text>
+            <Text><Link to="/Portfolio/my-techs">Tools</Link></Text>
           </button>
 
-          <button type="button" className="buttons-menu-mobile" onClick={() => RedirectPage('/professional-experience')}>
+          <button
+            type="button"
+            className="buttons-menu-mobile"
+            onClick={() => setMenuIsVisible(false)}
+          >
             <Briefcase size={36} />
-            <Text>Works</Text>
+            <Text><Link to="/Portfolio/professional-experience">Works</Link></Text>
           </button>
 
           {/* <button type="button" className="buttons-menu-mobile">
