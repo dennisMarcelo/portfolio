@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import { Heading } from '../Components/Heading/Heading';
-import { Text } from '../Components/Text/Text';
-import { Button } from '../Components/Button/Button';
+import { Link } from 'react-router-dom';
 import { GitHubSVG } from '../Icons/GitHubSVG';
+import { Text } from '../Components/Text/Text';
+import { Heading } from '../Components/Heading/Heading';
+import { Button } from '../Components/Button/Button';
 import { InstagramSVG } from '../Icons/InstagramSVG';
 import { LinkedinSVG } from '../Icons/LinkedinSVG';
 import { HomeArtSVG } from '../Icons/HomeArtSVG';
@@ -20,9 +21,9 @@ function Body() {
           <Text className="text-home">Seja bem-vindo ao meu portfólio</Text>
         </div>
 
-        <a href="/about">
+        <Link to="/Portfolio/about">
           <Button className="button-about-me-home">Saiba mais sobre mim</Button>
-        </a>
+        </Link>
 
         <div className=" flex space-x-7 center-icons-mobile">
           <a href="https://github.com/dennisMarcelo" target="_blank" rel="noreferrer">
